@@ -8,6 +8,6 @@ def show_katalog(request):
 data_katalog = CatalogItem.objects.all()
 context = {
     'list_barang': data_katalog,
-    'nama': 'Yudi :D',
+    'nama': 'Yudi Putra Sabri',
     'npm': 2106706123,
 }
