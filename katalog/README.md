@@ -19,7 +19,7 @@ Mengingat penjelasan env tadi yang akan menampung update packages dan dependanci
 Pada template, sudah disediakan /katalog yang nanti file htmlnya akan kita render dengan memanggil function yang sudah kita buat (show_catalog) dan me-return hasil rendernya. Pada views ini, akan mengambil semua data yang ada di database dan menambahkan beberapa variable penting seperti nama dan npm. Variable tersebut kita simpan dalam scope context dan kita bawa kedalam fungsi render sebagai parameter tambahan untuk dibawa ke html
 
 ### 2. urls.py
-First of all, kita menambahkan path('katalog/', include('katalog.urls')) pada urls yang berada pada product-django. Hal ini dilakukan untuk meroute '/katalog' agar menjalankan function show_catalog yang ada di katalog.views.py
+First of all, kita menambahkan path('katalog/', include('katalog.urls')) pada urls yang berada pada product-django. Hal ini dilakukan untuk meroute '/katalog' dengan katalog/urls.py agar menjalankan function show_catalog yang ada di katalog.views.py
 
 ### 3. katalog.html
 Dalam katalog/views.py, render akan dilakukan di katalog.html. Karena pada saat render kita juga menambahkan data tambahan berupa nama dan npm, maka untuk menggunakannya kita memerlukan curly brackets untuk menggunakan sebuah variable "{{nama}} dan {{npm}}". Selain itu, kita juga menggunakan for loop untuk mengambil data" yang ada pada database yang kita simpan dengan nama list_barang
