@@ -1,6 +1,6 @@
 ## Assignment 2
 
-Link hasil deploy dapat dilihat [di sini](https://tugas1yudi.herokuapp.com/).
+Link hasil deploy dapat dilihat [di sini](https://tugas2yudi.herokuapp.com/).
 <br>(add /katalog for the work)
 
 ## Bagan
