@@ -3,15 +3,26 @@ from mywatchlist.models import MyWatchlistItem
 from django.http import HttpResponse
 from django.core import serializers
 # TODO: Create your views here.
-
+data = MyWatchlistItem.objects.all()
 def show_mywatchlist(request):
+    result = ""
+    watched = 0
+    unwatched = 0
+
+    for a in data:
+        if (a.watched_movie): watched += 1
+        else: unwatched += 1
+
+    if watched > unwatched : result = "Selamat, kamu sudah banyak menonton!"
+    else : result = "Wah, kamu masih sedikit menonton!"    
+
     context = {
     'nama': 'Yudi Putra Sabri',
     'npm': 2106706123,
     }
-    return render(request, "main.html", context)
 
-data = MyWatchlistItem.objects.all()
+    return render(request, "main.html", context, result)
+
 
 context = {
     'list_movie': data,
