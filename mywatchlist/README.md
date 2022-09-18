@@ -18,12 +18,12 @@ Dalam kesatuan platform, pasti terjadi pertukaran data user dengan data yang ada
 
 ## Postman
 ### HTML
-![HTML]("/static/mywatch_html.png?raw=true")
+![HTML]("static/mywatch_html.png?raw=true")
 
 ### JSON
-![JSON]("/static/mywatch_json.png?raw=true")
+![JSON]("static/mywatch_json.png?raw=true")
 <br/><br/>
 
 ### XML
-![XML]("/static/mywatch_xml.png?raw=true")
+![XML]("static/mywatch_xml.png?raw=true")
 <br/><br/>
