@@ -19,9 +19,10 @@ def show_mywatchlist(request):
     context = {
     'nama': 'Yudi Putra Sabri',
     'npm': 2106706123,
+    'result' :result,
     }
 
-    return render(request, "main.html", context, result)
+    return render(request, "main.html", context)
 
 
 context = {
