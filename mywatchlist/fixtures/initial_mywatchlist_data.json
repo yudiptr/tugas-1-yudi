@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 1,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 1",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 2,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 2",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 3,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 3",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 4,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 4",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 5",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 6,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 6",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 7,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 7",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 8,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 8",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 9,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 9",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    },
+    {
+        "model": "mywatchlist.mywatchlistitem",
+        "pk": 10,
+        "fields": {
+            "watched_movie": false,
+            "movie_name": "Contoh 10",
+            "movie_rating": "7",
+            "movie_date": "1999-01-01",
+            "movie_review": "Belum ditonton"
+        }
+    }
+]

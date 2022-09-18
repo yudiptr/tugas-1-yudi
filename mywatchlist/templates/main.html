@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% load static %}
+<!-- CSS CUSTOM -->
+<link rel="stylesheet" href="{% static 'main.css' %}">
+
+{% block content %}
+
+ <h1>Tugas 3 PBP</h1>
+
+ <h5>Name: </h5>
+ <p>{{nama}}</p>
+
+ <h5>Student ID: </h5>
+ <p>{{npm}}</p>
+
+ <h2>Here is My Works for Assignment 3</h2>
+ <div class="main-container">
+    <h1 class="link">Hit the Links :D</h1>
+    <a class="links" href="/mywatchlist/html">HTML</a>
+    <a class="links" href="/mywatchlist/xml">XML</a>
+    <a class="links" href="/mywatchlist/json">JSON</a>
+ </div>
+
+
+{% endblock content %}
