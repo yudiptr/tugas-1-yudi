@@ -20,6 +20,8 @@ def show_mywatchlist(request):
     'nama': 'Yudi Putra Sabri',
     'npm': 2106706123,
     'result' :result,
+    'watched' : watched,
+    'unwatched' : unwatched,
     }
 
     return render(request, "main.html", context)

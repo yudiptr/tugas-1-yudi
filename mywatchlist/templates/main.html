@@ -14,14 +14,23 @@
  <h5>Student ID: </h5>
  <p>{{npm}}</p>
 
- <h2>Here is My Works for Assignment 3</h2>
+
  <div class="main-container">
-    <h1 class="link">Hit the Links :D</h1>
-    <a class="links" href="/mywatchlist/html">HTML</a>
-    <a class="links" href="/mywatchlist/xml">XML</a>
-    <a class="links" href="/mywatchlist/json">JSON</a>
+   <div class="inside-border">
+      <h2>Here are My Works for Assignment 3</h2>
+      <div class="works">
+         <h1 class="link">Hit the Links :D</h1>
+         <button onclick="location.href='/mywatchlist/html'">HTML</button>
+         <button onclick="location.href='/mywatchlist/xml'">XML</button>
+         <button onclick="location.href='/mywatchlist/json'">JSON</button>
+      </div>
+   </div>
  </div>
- <p class="result">{{result}}</p>
+ <div class="result">
+   <p class="final"> {{result}}</p>
+   <p class="result-description">Kamu menonton {{watched}} dari {{unwatched}} film yang ada di list kamu</p>
+ </div>
+
 
 
 {% endblock content %}
