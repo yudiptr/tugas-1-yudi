@@ -18,7 +18,7 @@ Dalam kesatuan platform, pasti terjadi pertukaran data user dengan data yang ada
 
 ## Postman
 ### HTML
-![HTML]("../static/mywatch_html.png?raw=true")
+![HTML]("../../static/mywatch_html.png?raw=true")
 
 ### JSON
 ![JSON]("../static/mywatch_json.png?raw=true")
