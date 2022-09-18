@@ -14,6 +14,7 @@ def show_mywatchlist(request):
         else: unwatched += 1
 
     if watched > unwatched : result = "Selamat, kamu sudah banyak menonton!"
+    if watched == unwatched : result = "Waduh, Kamu menonton setengah dari list kamu, ayo tambah lagi!"
     else : result = "Wah, kamu masih sedikit menonton!"    
 
     context = {

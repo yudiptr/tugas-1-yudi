@@ -3,7 +3,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 1,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 1",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
@@ -14,7 +14,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 2,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 2",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
@@ -25,7 +25,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 3,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 3",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
@@ -36,7 +36,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 4,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 4",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
@@ -45,9 +45,9 @@
     },
     {
         "model": "mywatchlist.mywatchlistitem",
-        "pk": 7,
+        "pk": 5,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 5",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
@@ -58,7 +58,7 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 6,
         "fields": {
-            "watched_movie": false,
+            "watched_movie": true,
             "movie_name": "Contoh 6",
             "movie_rating": "7",
             "movie_date": "1999-01-01",
