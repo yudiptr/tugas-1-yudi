@@ -4,10 +4,10 @@
         "pk": 1,
         "fields": {
             "watched_movie": true,
-            "movie_name": "Contoh 1",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "movie_name": "Vincenzo",
+            "movie_rating": "9",
+            "movie_date": "2021-20-02",
+            "movie_review": "Engga terlalu muter otak, tapi keren karena lebih nekenin cara bales dendam"
         }
     },
     {
@@ -15,20 +15,20 @@
         "pk": 2,
         "fields": {
             "watched_movie": true,
-            "movie_name": "Contoh 2",
+            "movie_name": " Big Mouse",
             "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "movie_date": "2022-17-09",
+            "movie_review": "Ending ga sesuai ekspektasi, ceritanya bagus diawal, ending terlalu maksa"
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 3,
         "fields": {
-            "watched_movie": true,
-            "movie_name": "Contoh 3",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
+            "watched_movie": false,
+            "movie_name": "One Pice Red",
+            "movie_rating": "-",
+            "movie_date": "2022-21-9",
             "movie_review": "Belum ditonton"
         }
     },
@@ -37,10 +37,10 @@
         "pk": 4,
         "fields": {
             "watched_movie": true,
-            "movie_name": "Contoh 4",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "movie_name": "Spiderman: No Way Home",
+            "movie_rating": "7.5",
+            "movie_date": "2021-15-12",
+            "movie_review": "Segi animasi bagus, tapi dari cerita kurang klimaks"
         }
     },
     {
@@ -48,10 +48,10 @@
         "pk": 5,
         "fields": {
             "watched_movie": true,
-            "movie_name": "Contoh 5",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "movie_name": "Marvel: Eternal",
+            "movie_rating": "5",
+            "movie_date": "2021-18,10",
+            "movie_review": "Gak jelas, gaada klimaks, nyambung sedikit banget sama mcu lain"
         }
     },
     {
@@ -59,21 +59,21 @@
         "pk": 6,
         "fields": {
             "watched_movie": true,
-            "movie_name": "Contoh 6",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "movie_name": "Pengabdi Setan 2",
+            "movie_rating": "6",
+            "movie_date": "20222-04-08",
+            "movie_review": "Kebanting sama yang 1, endingnya diselesain gak banget tiba tiba dateng 1 orang OP selesai"
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 7,
         "fields": {
-            "watched_movie": false,
-            "movie_name": "Contoh 7",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "watched_movie": true,
+            "movie_name": "The World Of Married",
+            "movie_rating": "9",
+            "movie_date": "2020-27-04",
+            "movie_review": "BAGUS BANGET, ga kayak drakor lain, ini lebih bawa esensi kesel ke cowonya dan bikin nagih ditonton wkwk"
         }
     },
     {
@@ -81,9 +81,9 @@
         "pk": 8,
         "fields": {
             "watched_movie": false,
-            "movie_name": "Contoh 8",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
+            "movie_name": "What's Wrong with Secretary Kim",
+            "movie_rating": "-",
+            "movie_date": "2018-06-06",
             "movie_review": "Belum ditonton"
         }
     },
@@ -91,22 +91,22 @@
         "model": "mywatchlist.mywatchlistitem",
         "pk": 9,
         "fields": {
-            "watched_movie": false,
-            "movie_name": "Contoh 9",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "watched_movie": true,
+            "movie_name": "Itaewon Class",
+            "movie_rating": "8",
+            "movie_date": "2020-31-01",
+            "movie_review": "Bagus, perjuangannya dapet dan endingnya sesuai. Gaada unsur maksa di dalemnya"
         }
     },
     {
         "model": "mywatchlist.mywatchlistitem",
         "pk": 10,
         "fields": {
-            "watched_movie": false,
-            "movie_name": "Contoh 10",
-            "movie_rating": "7",
-            "movie_date": "1999-01-01",
-            "movie_review": "Belum ditonton"
+            "watched_movie": true,
+            "movie_name": "Start-Up",
+            "movie_rating": "8",
+            "movie_date": "2020-17-10",
+            "movie_review": "Sebenernya bagus dari segi kerja keras sama perjuangan, cuma eksekusi segi love storynya kasian  Han Ji Pyong :("
         }
     }
 ]
