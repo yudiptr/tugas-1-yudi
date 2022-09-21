@@ -6,7 +6,7 @@
             "watched_movie": true,
             "movie_name": "Vincenzo",
             "movie_rating": "9",
-            "movie_date": "2021-20-02",
+            "movie_date": "2021-02-20",
             "movie_review": "Engga terlalu muter otak, tapi keren karena lebih nekenin cara bales dendam"
         }
     },
@@ -17,7 +17,7 @@
             "watched_movie": true,
             "movie_name": " Big Mouse",
             "movie_rating": "7",
-            "movie_date": "2022-17-09",
+            "movie_date": "2022-09-17",
             "movie_review": "Ending ga sesuai ekspektasi, ceritanya bagus diawal, ending terlalu maksa"
         }
     },
@@ -27,8 +27,8 @@
         "fields": {
             "watched_movie": false,
             "movie_name": "One Pice Red",
-            "movie_rating": "-",
-            "movie_date": "2022-21-9",
+            "movie_rating": "7",
+            "movie_date": "2022-09-21",
             "movie_review": "Belum ditonton"
         }
     },
@@ -38,8 +38,8 @@
         "fields": {
             "watched_movie": true,
             "movie_name": "Spiderman: No Way Home",
-            "movie_rating": "7.5",
-            "movie_date": "2021-15-12",
+            "movie_rating": "8",
+            "movie_date": "2021-12-15",
             "movie_review": "Segi animasi bagus, tapi dari cerita kurang klimaks"
         }
     },
@@ -50,7 +50,7 @@
             "watched_movie": true,
             "movie_name": "Marvel: Eternal",
             "movie_rating": "5",
-            "movie_date": "2021-18,10",
+            "movie_date": "2021-10-18",
             "movie_review": "Gak jelas, gaada klimaks, nyambung sedikit banget sama mcu lain"
         }
     },
@@ -61,7 +61,7 @@
             "watched_movie": true,
             "movie_name": "Pengabdi Setan 2",
             "movie_rating": "6",
-            "movie_date": "20222-04-08",
+            "movie_date": "2022-08-04",
             "movie_review": "Kebanting sama yang 1, endingnya diselesain gak banget tiba tiba dateng 1 orang OP selesai"
         }
     },
@@ -72,7 +72,7 @@
             "watched_movie": true,
             "movie_name": "The World Of Married",
             "movie_rating": "9",
-            "movie_date": "2020-27-04",
+            "movie_date": "2020-04-27",
             "movie_review": "BAGUS BANGET, ga kayak drakor lain, ini lebih bawa esensi kesel ke cowonya dan bikin nagih ditonton wkwk"
         }
     },
@@ -82,7 +82,7 @@
         "fields": {
             "watched_movie": false,
             "movie_name": "What's Wrong with Secretary Kim",
-            "movie_rating": "-",
+            "movie_rating": "8",
             "movie_date": "2018-06-06",
             "movie_review": "Belum ditonton"
         }
@@ -94,7 +94,7 @@
             "watched_movie": true,
             "movie_name": "Itaewon Class",
             "movie_rating": "8",
-            "movie_date": "2020-31-01",
+            "movie_date": "2020-01-31",
             "movie_review": "Bagus, perjuangannya dapet dan endingnya sesuai. Gaada unsur maksa di dalemnya"
         }
     },
@@ -105,7 +105,7 @@
             "watched_movie": true,
             "movie_name": "Start-Up",
             "movie_rating": "8",
-            "movie_date": "2020-17-10",
+            "movie_date": "2020-10-17",
             "movie_review": "Sebenernya bagus dari segi kerja keras sama perjuangan, cuma eksekusi segi love storynya kasian  Han Ji Pyong :("
         }
     }
