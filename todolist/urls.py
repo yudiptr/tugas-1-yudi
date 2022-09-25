@@ -9,5 +9,6 @@ urlpatterns = [
     path('logout/', logout_user, name='logout'),
     path('login/', login_user, name='login'),
     path('create-task/', create_task, name='create-task'),
-
+    path('delete/<int:pk>', delete, name='delete'),
+    path('change/<int:pk>', change, name='change'),
 ]

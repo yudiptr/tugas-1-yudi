@@ -9,6 +9,7 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
@@ -18,6 +19,7 @@ def show_todo(request):
     'list_todo' : data,
     'username' :  request.user.username,
     }
+    print(Task.objects.filter(id=1))
     return render(request, "todolist.html", context)
 
 def register(request):
@@ -60,8 +62,19 @@ def create_task(request):
         description = request.POST.get('description')
         date = datetime.datetime.now()
         user = request.user
-        Task.objects.create(title=title, description=description, date=date, user=user)
+        status = False
+        Task.objects.create(title=title, description=description, date=date, user=user, status=status)
         response = HttpResponseRedirect(reverse("todolist:show_todo")) 
         return response
 
     return render(request, "add.html")
+
+def delete(request, pk):
+    Task.objects.filter(id=pk).delete()
+    return redirect('todolist:show_todo')
+
+def change(request, pk):
+    data = Task.objects.get(id=pk)
+    data.status = not(data.status)
+    data.save()
+    return redirect('todolist:show_todo')
