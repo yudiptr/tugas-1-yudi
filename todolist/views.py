@@ -19,7 +19,6 @@ def show_todo(request):
     'list_todo' : data,
     'username' :  request.user.username,
     }
-    print(Task.objects.filter(id=1))
     return render(request, "todolist.html", context)
 
 def register(request):
