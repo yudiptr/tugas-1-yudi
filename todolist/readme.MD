@@ -11,7 +11,7 @@ Jika kita tidak menggunakan csrf token, website yang kita miliki tetap akan berj
 Kita bisa saja membuat elemen form tanpa menggunakan form.as_table. Jika menggunakan itu, mungkin ada beberapa variable yang ada di database tidak memerlukan di-POST sehingga kita dapat membuat form manual untuk mengatasinya. Form manual dibuat dengan membuat <form> dengan method post dan tentunya diisi csrf token. Setelah itu, buat tag table yang berisikan <tr>, dan didalam tr tersebut kita berikan tag input dengan hal penting type menyesuaikan kebutuhan dan name untuk identifier. Setelah form disubmit, akan dikembalikan ke fungsi yang memanggil form tersebut dan kita dapat mengakses input yang dimasukkan dengan menggunakan method `request.POST.get(name yang kita buat di table tadi)`.
 
 # Jelaskan proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML.
-Setelah user menekan tombol submit, data data yang input bisa diakses dengan menggunakan method `request.POST.get(name while creating input)`. setelah mendapatkan data yang diinput, kita bisa melakukan create database dengan menggunakan `"Models".objects.create(name = data input)` dengan name sesuai yang sudah kita buat di `todolist/models.py`. Setelah itu, as usual, data tersebut tersimpan di database django yang perlu kita akses dengan (dalam konteks ini menggunakan filter karena harus sesuai dengan user) `"Models".objects.filter(user=request.user)` dan kita deliver kedalam context agar kita ikut render ke html. Setelah direturn render dengan target html. object yang sudah kita filter tadi bisa kita loop dengan for each (contoh : `{% for todo in list_todo %}` list_todo karena data obj yang disimpan disini dalam variable list_todo). Selanjutnya, dalam loop, bisa kita tampilan data apa saya yang mau kita tampilkan dengan mengakses atributnya :D contoh `{{todo.status}}` dan lain-lain.
+Setelah user menekan tombol submit, data data yang input bisa diakses dengan menggunakan method `request.POST.get(name while creating input)`. setelah mendapatkan data yang diinput, kita bisa melakukan create database dengan menggunakan `"Models".objects.create(name = data input)` dengan name sesuai yang sudah kita buat di `todolist/models.py`. Setelah itu, as usual, data tersebut tersimpan di database django yang perlu kita akses dengan (dalam konteks ini menggunakan filter karena harus sesuai dengan user) `"Models".objects.filter(user=request.user)` dan kita deliver kedalam context agar kita ikut render ke html. Setelah direturn render dengan target html. object yang sudah kita filter tadi bisa kita loop dengan for each (contoh : `{% for todo in list_todo %}` list_todo karena data obj yang disimpan disini berada pada variable list_todo). Selanjutnya, dalam loop, bisa kita tampilan data apa saja yang mau kita tampilkan dengan mengakses atributnya :D contoh `{{todo.status}}` dan lain-lain.
 
 # Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
 1. Menjalankan `python manage.py startapp todolist` di folder root.
@@ -19,13 +19,6 @@ Setelah user menekan tombol submit, data data yang input bisa diakses dengan men
 3. Membuat class di `todolist/models.py` dan membuatnya field sesuai yang disuruh di tugas.
 4. Membuat fungsi login, logout, register yang masing masing terhubung dengan login.html dan register.html dan membuat restriksi agar user harus login dahulu dengan menambahkan `@login_required(login_url='/todolist/login/')` diatas fungsi yang merupakan main dari project.
 5. Mengedit bagian html agar menampikan user dengan mengakses variable yang ada di contexx (`{{username}}`) dan membuat dua buah button yang masing-masing memiliki logical command untuk logout, tambah task baru, dan membuat tabel untuk menampilkan data-data todolist yang sudah disubmit ke database.
-6. Ketika user memencet tombol tambah task, user akan diarahkan ke halaman baru `todolist/create-task` dan akan membuat form yang berisi task dan description yang akan dikirim ke fungsi create di views.py untuk ditambahkan ke database
-7. Membuat route agar terhubung dengan fungsi fungsi yang ada di views py ketika mengakses link
-    path('', show_todo, name='show_todo'),
-    path('register/', register, name='register'),
-    path('logout/', logout_user, name='logout'),
-    path('login/', login_user, name='login'),
-    path('create-task/', create_task, name='create-task'),
-    path('delete/<int:pk>', delete, name='delete'),
-    path('change/<int:pk>', change, name='change'),
-8. Deploy ke heroku dan membuat 2 user dengan masing-masing 3 dummy list to do
+6. Ketika user memencet tombol tambah task, user akan diarahkan ke halaman baru `todolist/create-task` dan akan membuat form yang berisi task dan description yang akan dikirim ke fungsi create di views.py untuk ditambahkan ke database.
+7. Membuat route agar terhubung dengan fungsi fungsi yang ada di views py ketika mengakses link todolist/register, login, create-task, delete, change, dan lain-lain.
+8. Deploy ke heroku dan membuat 2 user dengan masing-masing 3 dummy list to do.
