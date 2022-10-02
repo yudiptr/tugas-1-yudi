@@ -1,40 +1,55 @@
-<div>
-    <div class="header">
-        <p>Hello {{username}}</p>
+{% load static tailwind_tags %}
+{% tailwind_css %}
+<div class=" bg-gray-300 h-screen">
+  <div class="flex gap-4 items-center justify-center pt-40">
+    <p class=" font-bold">Hello {{username}}</p>
+  </div>
+    <div class="flex gap-4 items-center justify-center mt-4">
+      <div class=" bg-orange-300 w-fit rounded-2xl">
+        <button class="p-1" onclick="location.href='/todolist/create-task'">Create New Task</button>
+      </div>
+      <div class=" bg-orange-300 w-fit rounded-2xl">
+        <button class="p-1"><a href="{% url 'todolist:logout' %}">Logout</a></button>
+      </div>
     </div>
 
-    <button onclick="location.href='/todolist/create-task'">Create New Task</button>
 
-    <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
-
-
-    <table border="1">
+    <div class="flex justify-center items-center mt-4">
+    <table class="table-auto border-collapse border border-slate-500 bg-gray-100">
+      <thead>
         <tr>
-          <th>Date</th>
-          <th>Task</th>
-          <th>Desctiption</th>
-          <th>Status</th>
-          <th>Other Option</th>
-          <th></th>
+          <th class="border border-slate-600 p-2">Date</th>
+          <th class="border border-slate-600 p-2">Task</th>
+          <th class="border border-slate-600 p-2">Desctiption</th>
+          <th class="border border-slate-600 p-2">Status</th>
+          <th class="border border-slate-600 p-2">Other Option</th>
         </tr>
+      </thead>
+      <tbody>
         {% comment %} Add the data below this line {% endcomment %}
         {% for todo in list_todo %}
-        <tr>
-            <th>{{todo.date}}</th>
-            <th>{{todo.title}}</th>
-            <th>{{todo.description}}</th>
-            <th>
+        <tr class="">
+            <td class="border border-slate-600"><p class="flex justify-center">{{todo.date}}</p></td>
+            <td class="border border-slate-600"><p class="flex justify-center">{{todo.title}}</p></td>
+            <td class="border border-slate-600"><p class="flex justify-center">{{todo.description}}</p></td>
+            <td class="border border-slate-600">
+              <p class="flex justify-center p-1 m-1 bg-orange-200 rounded-2xl">
               {% if todo.status %}
-              Finished
+              Done
               {% else %}
               Not Yet
               {% endif%}
-            </th>
-            <th>
-              <button><a href="{% url 'todolist:delete' todo.id %}" title="">Delete</a></button>
-              <button><a href="{% url 'todolist:change' todo.id %}" title="">Change Status</a></button>
-            </th>
+            </p>
+            </td>
+            <td class="border border-slate-600">
+              <div class="p-1">
+                <button class=" bg-red-600 rounded-2xl p-1 text-white font-bold"><a href="{% url 'todolist:delete' todo.id %}" title="">Delete</a></button>
+                <button class=" bg-green-500 rounded-2xl p-1 text-white font-bold"><a href="{% url 'todolist:change' todo.id %}" title="">Change Status</a></button>
+              </div>
+            </td>
         </tr>
         {% endfor %}
+      </tbody>
       </table>
+    </div>
 </div>
