@@ -3,7 +3,7 @@
 * You have to create an account first!
 
 # Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
-Internal CSS : adalah kode yang dituliskan di dalam file html kita sendiri dengan tag <style> pada bagian header. Penulisan CSS dalam tag tersebut sama seperti penulisan file.css yang dibuat sebagaimana external css. Pada external css, kita perlu mengimport filenya dengan melakukan `<link rel="stylesheet" href="tugas.css"/>` yang biasanya diletakan di tag <head>. Selain itu, ada pula inline css yang berarti kita perlu mendefine css yang digunakan dalam tiap elemen yang kita buat di file html kita, contohnya `<h2 style="color:blue; font-family: arial;">semoga lulus</h2>`
+Internal CSS : adalah kode yang dituliskan di dalam file html kita sendiri dengan tag `<style>` pada bagian header. Penulisan CSS dalam tag tersebut sama seperti penulisan file.css yang dibuat sebagaimana external css. Pada external css, kita perlu mengimport filenya dengan melakukan `<link rel="stylesheet" href="tugas.css"/>` yang biasanya diletakan di tag `<head>`. Selain itu, ada pula inline css yang berarti kita perlu mendefine css yang digunakan dalam tiap elemen yang kita buat di file html kita, contohnya `<h2 style="color:blue; font-family: arial;">semoga lulus</h2>`
 
 ### Kelebihan Kekurangan
 * Inline : bisa untuk tracing karena hanya menerapkan pada satu, gampang diperbaiki, lebih ringan karena load accessnya sebentar, akan tetapi cape karena hanya untuk apply ke 1 elemen.
