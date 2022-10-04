@@ -12,7 +12,7 @@ Internal CSS : adalah kode yang dituliskan di dalam file html kita sendiri denga
 
 # Jelaskan tag HTML5 yang kamu ketahui.
 ada banyak tag yang ada di html 5 :D
-contohnya ada <h1> hingga <h6> yang biasa kita pakai untuk header, ada <p> untuk tulis teks, terus ada <form> seperti lab sebelumnya untuk membuat form yang akan disubmit, kemudian ada <img> untuk import picture dan yang paling common <div> sebagai wadah atau tatakan untuk elemen yang akan dibuat di dalamnya. Selain itu ada <ul> <li> untuk membuat list, <title> untuk judul halaman. Dan lain - lain :D
+contohnya ada `<h1>` hingga `<h6>` yang biasa kita pakai untuk header, ada <p> untuk tulis teks, terus ada <form> seperti lab sebelumnya untuk membuat form yang akan disubmit, kemudian ada <img> untuk import picture dan yang paling common <div> sebagai wadah atau tatakan untuk elemen yang akan dibuat di dalamnya. Selain itu ada <ul> <li> untuk membuat list, <title> untuk judul halaman. Dan lain - lain :D
 
 # Jelaskan tipe-tipe CSS selector yang kamu ketahui.
 " . " untuk selector class dari sebuah komponen,  " # " untuk select id yang kita tambahkan di sebuah komponen,  > atau child selector untuk memilih semua element yang ada di dalam atau child sebuah komponen. Selain itu, hal yang paling basic adalah element selector untuk memilih elemen yang kita gunakan contohnya h1, h2, h3, dan lain-lain.
