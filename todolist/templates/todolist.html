@@ -1,6 +1,7 @@
 {% load static tailwind_tags %}
 {% tailwind_css %}
 <title>ToDo List</title>
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 <div class=" bg-gray-300">
   <div class=" bg-orange-300 h-16">
@@ -8,6 +9,10 @@
 <div class=" bg-gray-300 min-h-screen w-fit">
   <div class=" bg-orange-300 h-16 w-screen">
 >>>>>>> Stashed changes
+=======
+<div class=" bg-gray-300 min-h-screen">
+  <div class=" bg-orange-300 h-16 w-screen">
+>>>>>>> eb7578bd44614aa71f389171320935e3ded6a65a
     <div class="flex items-center h-16 p-8">
       <p class=" font-bold text-black">Hello {{username}}</p>
 
@@ -22,10 +27,10 @@
       </div>
     </div>
   </div>
-    <div class="flex flex-col justify-end justify-items-center bg-gray-300 min-h-screen mt-4 p-4">
+    <div class="flex  justify-center justify-items-center bg-gray-300 h-fit mt-4 p-4">
       <div class="grid lg:grid-cols-4 md:grid-cols-3 gap-5 mt-8 sm:mt-5">
         {% for todo in list_todo %}
-          <div class="bg-white rounded-2xl p-8 flex flex-col gap-2 hover:drop-shadow-xl transition duration-300 ease-in-out">
+          <div class="bg-white rounded-2xl p-8 flex flex-col gap-2 hover:drop-shadow-2xl transition duration-300 ease-in-out">
               <p class="text-center text-xl font-semibold">{{todo.title}} </p>
               <p class="text-center text-xs">{{todo.date}}</p>
             <div class="flex m-2 p-2 flex-col">
