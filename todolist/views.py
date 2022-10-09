@@ -1,3 +1,4 @@
+
 from django.shortcuts import render
 import datetime
 from todolist.models import Task
@@ -9,7 +10,8 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login
 from django.contrib.auth import logout
-from django.shortcuts import get_object_or_404
+from django.core import serializers
+from django.http.response import JsonResponse, HttpResponse
 
 # Create your views here.
 @login_required(login_url='/todolist/login/')
@@ -19,6 +21,7 @@ def show_todo(request):
     'list_todo' : data,
     'username' :  request.user.username,
     }
+
     return render(request, "todolist.html", context)
 
 def register(request):
@@ -77,3 +80,28 @@ def change(request, pk):
     data.status = not(data.status)
     data.save()
     return redirect('todolist:show_todo')
+
+
+@login_required(login_url='/todolist/login/')
+def show_json(request):
+    task = Task.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', task), content_type='application/json')
+
+def is_ajax(request):
+    return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
+
+@login_required(login_url='/todolist/login/')
+def main_json(request):
+    return render(request, "ajax_db.html")
+
+@login_required(login_url='/todolist/login/')
+def add_ajax(request):
+    if request.method == 'POST':
+        title = request.POST.get('nama')
+        description = request.POST.get('desc')
+        date = datetime.datetime.now()
+        user = request.user
+        status = False
+        item = Task(title=title, description=description, date=date, user=user, status=status)
+        item.save()
+        return JsonResponse({"instance": "Proyek Dibuat"},status=200)
