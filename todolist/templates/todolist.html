@@ -81,6 +81,9 @@
 <script>
   const modal_overlay = document.querySelector('#modal_overlay');
   const modal = document.querySelector('#modal');
+  const nama = document.getElementById('nama');
+  const desc = document.getElementById('desc');
+
   
   function openModal (value){
     const modalCl = modal.classList
@@ -91,6 +94,8 @@
         modalCl.remove('opacity-0')
         modalCl.remove('-translate-y-full')
         modalCl.remove('scale-150')
+        nama.value = '';
+        desc.value = '';
       }, 100);
     } else {
       modalCl.add('-translate-y-full')
@@ -130,14 +135,9 @@
         url: "{% url 'todolist:show_json' %}",
         type: "GET",
         dataType: "json",
-        success: function(resp){
-          console.log(resp);
-          
+        success: function(resp){  
             for (let i of resp){
-                console.log(i);
-                console.log(i.fields.id)
                 let status = i.fields.status ? "Finished" : "Not Yet";
-                
                 tab +=`
                 <div class="bg-white rounded-2xl p-8 flex flex-col gap-2 hover:drop-shadow-2xl transition duration-300 ease-in-out">
                   <p class="text-center text-xl font-semibold">${i.fields.title}</p>
