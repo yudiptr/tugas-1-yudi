@@ -87,13 +87,6 @@ def show_json(request):
     task = Task.objects.filter(user=request.user)
     return HttpResponse(serializers.serialize('json', task), content_type='application/json')
 
-def is_ajax(request):
-    return request.META.get('HTTP_X_REQUESTED_WITH') == 'XMLHttpRequest'
-
-@login_required(login_url='/todolist/login/')
-def main_json(request):
-    return render(request, "ajax_db.html")
-
 @login_required(login_url='/todolist/login/')
 def add_ajax(request):
     if request.method == 'POST':
