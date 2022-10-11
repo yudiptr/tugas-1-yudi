@@ -75,8 +75,7 @@ def create_task(request):
 @csrf_exempt    
 def delete(request, pk):
     Task.objects.filter(id=pk).delete()
-    return HttpResponse(status=202)
-
+    return JsonResponse({"instance": "Proyek Dihapus"},status=200)
 def change(request, pk):
     data = Task.objects.get(id=pk)
     data.status = not(data.status)
