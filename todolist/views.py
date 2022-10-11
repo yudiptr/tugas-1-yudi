@@ -4,6 +4,7 @@ import datetime
 from todolist.models import Task
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 from django.shortcuts import redirect
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
@@ -71,9 +72,10 @@ def create_task(request):
 
     return render(request, "add.html")
 
+@csrf_exempt    
 def delete(request, pk):
     Task.objects.filter(id=pk).delete()
-    return redirect('todolist:show_todo')
+    return HttpResponse(status=202)
 
 def change(request, pk):
     data = Task.objects.get(id=pk)

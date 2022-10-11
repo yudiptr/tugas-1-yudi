@@ -111,6 +111,18 @@
     loadData();
   });
 
+
+  function delDB(val){
+    $.ajax({
+      type :"DELETE",
+      csrfmiddlewaretoken: "{{ csrf_token }}",
+      url :`/todolist/delete/${val}`,
+      success: function () {
+        loadData();
+      },
+    })
+  }
+
   $(document).on("submit", "#tembak_db", function (e) {
     e.preventDefault();
     $.ajax({
@@ -152,7 +164,7 @@
                   </div>
                   <div class="w-full flex justify-center gap-2">
                     <a href="change/${i.pk}"><button class=" bg-red-600 rounded-2xl p-2 text-white font-bold">Change Status</button></a>
-                    <a href="delete/${i.pk}"><button class="bg-green-500 rounded-2xl p-2 text-white font-bold">Delete</button></a>
+                    <button class="bg-green-500 rounded-2xl p-2 text-white font-bold delete" onclick="delDB(${i.pk})">Delete</button>
                   </div>
                 </div>`
               ;
