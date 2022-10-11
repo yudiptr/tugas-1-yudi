@@ -74,14 +74,15 @@ def create_task(request):
 
 @csrf_exempt    
 def delete(request, pk):
-    Task.objects.filter(id=pk).delete()
+    if request.method == 'DELETE':
+        Task.objects.filter(id=pk).delete()
     return JsonResponse({"instance": "Proyek Dihapus"},status=200)
+
 def change(request, pk):
     data = Task.objects.get(id=pk)
     data.status = not(data.status)
     data.save()
     return redirect('todolist:show_todo')
-
 
 @login_required(login_url='/todolist/login/')
 def show_json(request):
