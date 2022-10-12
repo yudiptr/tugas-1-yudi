@@ -113,13 +113,11 @@
 
 
   function delDB(val){
-    console.log(123);
     $.ajax({
       type :"DELETE",
       csrfmiddlewaretoken: "{{ csrf_token }}",
       url :`/todolist/delete/${val}`,
       success: function () {
-        console.log(12333);
         $(`#${val}`).remove()
       },
     })
